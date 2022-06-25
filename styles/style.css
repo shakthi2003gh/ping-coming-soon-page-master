@@ -1,4 +1,5 @@
 @import url(/styles/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
 *,
 *::after,
@@ -9,4 +10,42 @@
 html {
   font-size: 62.5%;
   min-width: 375px;
+}
+
+/* >Color palette */
+:root {
+  --color-primary: hsl(209, 33%, 12%);
+  --color-secondary: hsl(223, 87%, 63%);
+  --color-accent: hsl(0, 0%, 59%);
+  --color-error: hsl(354, 100%, 66%);
+  --bg: hsl(223, 100%, 88%);
+}
+
+/* >Typography */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--color-accent);
+}
+
+mark {
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+@media (min-width: 550px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
 }
